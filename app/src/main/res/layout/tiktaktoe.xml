@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#eb0d0d"
+        android:id="@+id/frameLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Tik Tak Toe!"
+            android:id="@+id/textView"
+            android:layout_gravity="left|center_vertical"
+            android:textSize="60dp"
+            android:paddingLeft="21dp"
+            android:paddingTop="14dp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/frameLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout"
+        android:background="@drawable/hintergrund">
+
+        <TextView
+            android:layout_width="99dp"
+            android:layout_height="120dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:id="@+id/t2"
+            android:paddingLeft="40dp"
+            android:paddingTop="28dp"
+            android:textSize="45dp" />
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="115dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:paddingLeft="50dp"
+            android:paddingTop="28dp"
+            android:id="@+id/t3"
+            android:layout_alignTop="@+id/t2"
+            android:layout_centerHorizontal="true"
+            android:textSize="45dp" />
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:paddingLeft="45dp"
+            android:paddingTop="28dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:id="@+id/t4"
+            android:layout_alignTop="@+id/t3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="45dp"
+            android:paddingRight="30dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+
+            android:paddingTop="20dp"
+            android:id="@+id/t5"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="45dp"
+            android:paddingLeft="40dp" />
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="90dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:paddingTop="20dp"
+            android:paddingLeft="50dp"
+            android:id="@+id/t6"
+            android:layout_alignTop="@+id/t5"
+            android:layout_centerHorizontal="true"
+            android:textSize="45dp" />
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="90dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:id="@+id/t7"
+            android:paddingTop="20dp"
+            android:paddingLeft="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/t4"
+            android:layout_alignStart="@+id/t4"
+            android:textSize="45dp"
+            android:paddingRight="30dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:id="@+id/t8"
+            android:textSize="45dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:id="@+id/t9"
+            android:layout_alignTop="@+id/t8"
+            android:layout_alignLeft="@+id/t6"
+            android:layout_alignStart="@+id/t6"
+            android:textSize="45dp"
+            android:paddingTop="35dp"
+            android:paddingLeft="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/t6"
+            android:layout_alignEnd="@+id/t6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:id="@+id/t10"
+            android:layout_alignTop="@+id/t9"
+            android:layout_alignLeft="@+id/t7"
+            android:layout_alignStart="@+id/t7"
+            android:textSize="45dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:background="#ea1313"></FrameLayout>
+</RelativeLayout>
